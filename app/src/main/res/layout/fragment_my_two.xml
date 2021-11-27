@@ -10,7 +10,7 @@
             android:id="@+id/txt_note_result"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text=""
+            android:text="@string/some_text"
             android:textSize="24sp"/>
 
 </FrameLayout>

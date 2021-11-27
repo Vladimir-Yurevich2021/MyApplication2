@@ -12,10 +12,10 @@
             android:layout_height="wrap_content"
             android:textSize="24sp"
             android:text="@string/btn_txt_create_note"/>
-    <EditText
-        android:id="@+id/txt_note"
+    <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:text=""/>
+            android:layout_height="wrap_content"
+
+    />
 </LinearLayout>
