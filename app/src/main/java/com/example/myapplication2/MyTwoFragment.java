@@ -7,13 +7,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class MyFragment extends Fragment {
+public class MyTwoFragment extends Fragment {
 
 
 
 
-    public static MyFragment newInstance(String param1, String param2) {
-        MyFragment fragment = new MyFragment();
+    public static MyTwoFragment newInstance(String param1, String param2) {
+        MyTwoFragment fragment = new MyTwoFragment();
         Bundle args = new Bundle();
 
         fragment.setArguments(args);
@@ -30,6 +30,6 @@ public class MyFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_my, container, false);
+        return inflater.inflate(R.layout.fragment_my_two, container, false);
     }
 }
