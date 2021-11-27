@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context=".MyFragment">
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+    <Button android:id="@+id/btn_create"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment"/>
-
-</FrameLayout>
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/btn_txt_create_note"/>
+    <EditText
+        android:id="@+id/txt_note"
+            android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text=""/>
+</LinearLayout>
