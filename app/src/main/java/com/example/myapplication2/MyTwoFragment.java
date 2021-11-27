@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 
 
 public class MyTwoFragment extends Fragment {
-
+    static final String ARG_INDEX="index";
 
 
 
@@ -16,6 +16,14 @@ public class MyTwoFragment extends Fragment {
         MyTwoFragment fragment = new MyTwoFragment();
         Bundle args = new Bundle();
 
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    public static Fragment newInstance(int index) {
+        MyTwoFragment fragment=new MyTwoFragment();
+        Bundle args = new Bundle();
+        args.putInt(ARG_INDEX,index);
         fragment.setArguments(args);
         return fragment;
     }
