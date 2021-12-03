@@ -17,12 +17,12 @@ public class MainActivity extends AppCompatActivity {
             getSupportFragmentManager()
                     .beginTransaction()
                     .replace(R.id.txt_note_result,
-                           MyTwoFragment.newInstance(0)).commit();
+                           NotesFragment.newInstance(0)).commit();
         } else {
             getSupportFragmentManager()
                     .beginTransaction()
                     .replace(R.id.container_fragment, new
-                            MyFragment()).commit();
+                            MainNotesFragment()).commit();
         }
 
 

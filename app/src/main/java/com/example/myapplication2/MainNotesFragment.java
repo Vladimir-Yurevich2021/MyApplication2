@@ -1,7 +1,6 @@
-package com.example.myapplication2;
+  package com.example.myapplication2;
 
 import android.os.Bundle;
-import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -12,11 +11,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class MyFragment extends Fragment {
+public class MainNotesFragment extends Fragment {
 
 
-    public static MyFragment newInstance(String param1, String param2) {
-        MyFragment fragment = new MyFragment();
+    public static MainNotesFragment newInstance(String param1, String param2) {
+        MainNotesFragment fragment = new MainNotesFragment();
         Bundle args = new Bundle();
 
         fragment.setArguments(args);
@@ -33,7 +32,7 @@ public class MyFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_my, container, false);
+        return inflater.inflate(R.layout.fragment_notes_main, container, false);
     }
 
     @Override
