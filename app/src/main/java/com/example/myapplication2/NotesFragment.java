@@ -10,13 +10,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class MyTwoFragment extends Fragment {
+public class NotesFragment extends Fragment {
     static final String ARG_INDEX="index";
 
 
 
-    public static MyTwoFragment newInstance(String param1, String param2) {
-        MyTwoFragment fragment = new MyTwoFragment();
+    public static NotesFragment newInstance(String param1, String param2) {
+        NotesFragment fragment = new NotesFragment();
         Bundle args = new Bundle();
 
         fragment.setArguments(args);
@@ -24,7 +24,7 @@ public class MyTwoFragment extends Fragment {
     }
 
     public static Fragment newInstance(int index) {
-        MyTwoFragment fragment=new MyTwoFragment();
+        NotesFragment fragment=new NotesFragment();
         Bundle args = new Bundle();
         args.putInt(ARG_INDEX,index);
         fragment.setArguments(args);
@@ -41,7 +41,7 @@ public class MyTwoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_my_two, container, false);
+        return inflater.inflate(R.layout.fragment_notes, container, false);
     }
 
     @Override
