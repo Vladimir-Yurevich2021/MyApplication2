@@ -41,7 +41,7 @@ initNavigationView();
                 int id=item.getItemId();
                 switch (id){
                     case R.id.drawer_about:
-                       // openAboutFragment();
+                        openAboutFragment();
                         return true;
                     case R.id.drawer_exit:
                         finish();
@@ -50,5 +50,14 @@ initNavigationView();
                 }                return false;
             }
         });
+    }
+
+    private void openAboutFragment() {
+        AboutFragment aboutFragment=new AboutFragment();
+        getSupportFragmentManager()
+                .beginTransaction()
+                .addToBackStack("")
+                .replace(R.id.container_fragment,aboutFragment)
+                .commit();
     }
 }
