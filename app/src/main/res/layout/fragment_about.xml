@@ -9,12 +9,13 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+            android:textSize="34sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/txt_about_fragment"/>
     <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
                android:contentDescription="@string/txt_about_fragment"
                android:src="@drawable/android_oreo"/>
 
