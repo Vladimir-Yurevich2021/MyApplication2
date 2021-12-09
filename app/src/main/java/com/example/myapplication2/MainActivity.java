@@ -2,11 +2,14 @@ package com.example.myapplication2;
 
 import android.content.res.Configuration;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,12 +47,25 @@ initNavigationView();
                         openAboutFragment();
                         return true;
                     case R.id.drawer_exit:
-                        finish();
+                        Snackbar.make(findViewById(R.id.navigation_view),"Вы уверены, что хотите выйти?",Snackbar.LENGTH_INDEFINITE)
+                                        .setAction("Выйти", new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View view) {
+                                                showToast();
+                                            }
+                                        }).show();
+
+                       // finish();
                         return true;
 
                 }                return false;
             }
         });
+    }
+
+    private void showToast() {
+        Toast.makeText(this, "Спасибо, что пользуетесь нашим приложением!", Toast.LENGTH_SHORT).show();
+    
     }
 
     private void openAboutFragment() {
